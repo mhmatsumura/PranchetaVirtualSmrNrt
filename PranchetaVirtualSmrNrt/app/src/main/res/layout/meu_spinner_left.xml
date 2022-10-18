@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/text1"
+    android:singleLine="true"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:ellipsize="marquee"
+    android:textSize="0sp"
+    android:textColor="#0d0d0d"
+    android:background="@drawable/eletricistacopelm"
+    android:gravity="left"
+    android:padding="@dimen/padding"
+
+
+
+  />

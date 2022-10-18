@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="actionBarStyle">@style/AppTheme.MyActionBarStyle</item>
+
+
+        <item name="actionOverflowButtonStyle">@style/AppTheme.MyActionOverFlowButtonStyle</item>
+
+
+
+        <item name="actionBarSize">@dimen/foto_height</item>
+
+        <item name="actionButtonStyle">@style/AppTheme.MyActionButtonStyle</item>
+
+
+
+
+
+    </style>
+
+
+
+
+
+
+    <style name="AppTheme.MyActionBarStyle" parent="Widget.AppCompat.ActionBar" >
+
+
+
+
+        <item name="background">@color/colorPrimary</item>
+        <item name="titleTextStyle">@style/AppTheme.MyTitleTextStyle</item>
+        <item name="windowActionBarOverlay">true</item>
+        
+
+
+
+
+
+    </style>
+
+    <style name="AppTheme.MyActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+
+
+
+        <item name="android:minHeight">130dp</item>
+        <item name="android:maxHeight">148dp</item>
+        <item name="height">138dp</item>
+
+    </style>|
+
+    <style name="AppTheme.MyActionOverFlowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+
+
+
+    </style>|
+
+
+
+    <style name="AppTheme.MyTitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+
+        <item name="android:textSize">90dp</item>
+        <item name="android:textColor">#FAF8F9</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="AppTheme.MyPopupMenuStyle" parent="Widget.AppCompat.PopupMenu">
+
+        <item name="height">@dimen/foto_height</item>
+
+
+    </style>
+
+
+
+</resources>

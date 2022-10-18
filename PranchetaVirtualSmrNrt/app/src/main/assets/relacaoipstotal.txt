@@ -1,0 +1,14 @@
+05/03/2021
+#&%redelna
+CANAL 02        LUPA:  GA99999  99.999.9.9      DNP 01 PORTA 99999 RDA
+#&%redelnafim
+#&%redeapa
+CANAL 91        ONIX:  RA99999  99.999.9.9      DNP 05 PORTA 99999 JDA
+#&%redeapafim
+#&%redecpo
+CANAL 149         F6:  RA99999   99.999.9.9      DNP 01 PORTA 99999 CPO GPRS
+#&%redecpofim
+#&%satlna
+CANAL 01       FORM6:  RA99999  99.999.9.9      DNP 01 PORTA 99999 IVP SATELITE
+#&%satlnafim
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/item_registro"
+                android:text="42291"
+                android:textSize="@dimen/text_size_edittext"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_weight="60"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/item_email"
+                android:text="Email: ggggmauricio.matsumura@copel.com"
+                android:textSize="@dimen/text_size_label"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_weight="40"/>
+
+
+</LinearLayout>

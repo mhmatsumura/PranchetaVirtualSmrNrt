@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    de 3,7 polegadas a 6,0 polegadas value-normal
+        7,0 polegadas value-large
+        de 8,0 polegadas a 10,1 polegadas value-xlarge
+-->
+
+<!--  proporção hdpi,xhdpi,xxhdpi,xxxhdpi 4 6 8 12;40 60 80 120; 20 30 40 60  -->
+
+<resources>
+    <dimen name="text_size_label">14sp</dimen>
+    <dimen name="text_size_medio">19sp</dimen>
+    <dimen name="text_size_edittext">24sp</dimen>
+    <dimen name="title">30sp</dimen>
+
+    <dimen name="margin">5dp</dimen>
+    <dimen name="margin_label">10dp</dimen>
+    <dimen name="padding">5dp</dimen>
+    <dimen name="edittext_height">60dp</dimen>
+    <dimen name="edittext_height_menor">50dp</dimen>
+    <dimen name="foto_height">90dp</dimen>
+</resources>

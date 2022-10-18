@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_lista_servico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:theme="@style/AppTheme"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_lista_servico"
+        android:id="@+id/lista_servicos"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/text_size_edittext">
+
+
+        <Button
+            android:layout_width="@dimen/foto_height"
+            android:layout_height="@dimen/foto_height"
+            android:background="@drawable/botaoip"
+            android:text="IP"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:id="@+id/botao_ip"/>
+
+        <Button
+            android:layout_width="@dimen/foto_height"
+            android:layout_height="@dimen/foto_height"
+            android:background="@drawable/botaoencerrado"
+            android:text="E"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="@dimen/text_size_edittext"
+            android:id="@+id/botao_encerrado"/>
+
+        <Button
+            android:layout_width="@dimen/foto_height"
+            android:layout_height="@dimen/foto_height"
+            android:background="@drawable/botaonovo"
+            android:text="+"
+            android:textSize="50sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="@dimen/text_size_edittext"
+            android:layout_marginBottom="@dimen/edittext_height"
+            android:id="@+id/novo_servico"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

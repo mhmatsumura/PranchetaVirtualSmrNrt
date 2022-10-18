@@ -1,0 +1,1125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar_formulario_servico"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/colorPrimary"
+    app:titleTextAppearance="@style/Toolbar.TitleText"
+    app:theme="@style/AppTheme"
+    />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewExecutor1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="50"
+                android:text="Executor 1:"
+                android:textSize="@dimen/text_size_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/formulario_executor1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="87"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center_vertical"
+                android:inputType="date"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext"
+                android:enabled="false"
+                android:layout_gravity="top"/>
+
+            <Spinner
+                android:id="@+id/spinner_executor1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="13"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_edittext"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewExecutor2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="50"
+                android:text="Executor 2:"
+                android:textSize="@dimen/text_size_label" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/formulario_executor2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="87"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center_vertical"
+                android:inputType="date"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext"
+                android:enabled="false"
+                android:layout_gravity="top"/>
+
+
+            <Spinner
+                android:id="@+id/spinner_executor2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="13"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_edittext"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewData"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="35"
+                android:text="Data:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewTipo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="15"
+                android:text="Tipo:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewRegiao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="20"
+                android:text="Regiao:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewEquipamento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="30"
+                android:text="Equipamento:"
+                android:textSize="@dimen/text_size_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/formulario_data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="35"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="date"
+                android:padding="@dimen/padding"
+                android:maxLength="10"
+                android:textSize="@dimen/text_size_edittext"
+                android:text="10/05/2020"
+                android:layout_gravity="top"/>
+
+            <Spinner
+                android:id="@+id/spinner_tipoEqp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="15"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:layout_gravity="top"
+
+                />
+
+            <Spinner
+                android:id="@+id/spinner_regiao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="20"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_edittext"
+
+
+                />
+
+            <EditText
+                android:id="@+id/formulario_equipamento"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="30"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:maxLength="5"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext"
+                android:inputType="textCapCharacters"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textViewCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_label"
+            android:layout_weight="28"
+            android:text="Cidade:"
+            android:textSize="@dimen/text_size_label"
+            android:inputType="textCapCharacters"/>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/actv_cidades"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/edit_text_basico"
+            android:gravity="center"
+            android:maxLength="35"
+            android:inputType="textCapSentences"
+            android:textSize="@dimen/text_size_edittext"
+
+
+            />
+
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="@dimen/margin"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewOs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="33"
+                android:text="Nº OS:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewSds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="33"
+                android:text="Nº SDS:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewOpr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="33"
+                android:text="Nº OPR:"
+                android:textSize="@dimen/text_size_label" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+            <EditText
+                android:id="@+id/formulario_os"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="33"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext" />
+
+            <EditText
+                android:id="@+id/formulario_sds"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="33"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="7"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext" />
+
+            <EditText
+                android:id="@+id/formulario_opr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="33"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="9"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="@dimen/margin"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewSaida"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="24"
+                android:text="Saída:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewInicio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="25"
+                android:text="Início:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewTermino"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="25"
+                android:text="Término:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewRetorno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="25"
+                android:text="Retorno:"
+                android:textSize="@dimen/text_size_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/formulario_saida"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="24"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="time"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext"
+                android:maxLength="5"
+                />
+
+            <EditText
+                android:id="@+id/formulario_inicio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="25"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="time"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext"
+                android:maxLength="5"/>
+            <EditText
+                android:id="@+id/formulario_termino"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="25"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="time"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext"
+                android:maxLength="5"/>
+            <EditText
+                android:id="@+id/formulario_retorno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="25"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="time"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext"
+                android:maxLength="5"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="@dimen/margin"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewKmi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="25"
+                android:text="Km Inicial:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewKmf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="25"
+                android:text="Km Final:"
+                android:textSize="@dimen/text_size_label" />
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+
+            <EditText
+                android:id="@+id/formulario_Kmi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="25"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext" />
+
+            <EditText
+                android:id="@+id/formulario_Kmf"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="25"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext" />
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                android:id="@+id/formulario_botao_pesquisar_ip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/botao_relevo"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:text="PESQUISAR IP"
+                android:textSize="@dimen/text_size_edittext"
+                android:textStyle="italic"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="48"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="@dimen/margin"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewComunicacao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="25"
+                android:text="T. Comun.:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewPorta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="20"
+                android:text="Porta:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewDnp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="10"
+                android:text="Dnp:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewIp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="45"
+                android:text="IP:"
+                android:textSize="@dimen/text_size_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spinner_comunicação"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="25"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_edittext"
+
+                />
+
+            <EditText
+                android:id="@+id/formulario_porta"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="20"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext" />
+
+            <Spinner
+                android:id="@+id/spinner_dnp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="10"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_edittext"
+
+                />
+
+            <EditText
+                android:id="@+id/formulario_ip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="45"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
+                android:maxLength="15"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="@dimen/margin"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="49"
+                >
+
+                <TextView
+                    android:id="@+id/label_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Chave de isolamento?:"
+                    android:textSize="@dimen/text_size_medio"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:gravity="center_vertical"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupChaveIsolamento"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rbChaveSim"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Sim"
+                        android:textSize="@dimen/text_size_edittext"
+                        android:layout_weight="50"/>
+
+                    <RadioButton
+                        android:id="@+id/rbChaveNao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Não"
+                        android:textSize="@dimen/text_size_edittext"
+                        android:layout_weight="50"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="49"
+                >
+
+                <TextView
+                    android:id="@+id/label_radioBypass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Chave de Bypass?:"
+                    android:textSize="@dimen/text_size_medio"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:gravity="center_vertical"/>
+
+                <RadioGroup
+                    android:id="@+id/radioGroupChaveBypass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rbBypassSim"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Sim"
+                        android:textSize="@dimen/text_size_edittext"
+                        android:layout_weight="50"/>
+
+                    <RadioButton
+                        android:id="@+id/rbBypassNao"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Não"
+                        android:textSize="@dimen/text_size_edittext"
+                        android:layout_weight="50"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider14"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="@dimen/margin"
+            android:background="?android:attr/listDivider" />
+
+
+        <TextView
+            android:id="@+id/textViewPep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_label"
+            android:text="Elem. PEP: I##-#######"
+            android:textSize="@dimen/text_size_label" />
+
+        <EditText
+            android:id="@+id/formulario_pep"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:layout_gravity="top"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/edit_text_basico"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text_size_edittext" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="@dimen/margin"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textViewDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_label"
+            android:layout_weight="28"
+            android:text="Código da atividade:"
+            android:textSize="@dimen/text_size_label" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:orientation="horizontal"
+        >
+
+
+        <Spinner
+            android:id="@+id/spinner_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/edit_text_basico"
+            android:gravity="center"
+            android:layout_weight="85"
+            />
+
+    </LinearLayout>
+
+        <View
+            android:id="@+id/dividerFrases"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="@dimen/margin"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textViewFrases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_label"
+            android:layout_weight="28"
+            android:text="Frases prontas:"
+            android:textSize="@dimen/text_size_label" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+            <Spinner
+                android:id="@+id/spinner_frases"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginBottom="@dimen/margin"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:layout_weight="85"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="@dimen/margin"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewMaterial1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="80"
+                android:text="Material 1:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewQuantidade1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="20"
+                android:text="Quantid.:"
+                android:textSize="@dimen/text_size_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spinner_material1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="80"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_edittext"
+
+                />
+
+            <EditText
+                android:id="@+id/formulario_quantidade1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="20"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/textViewMaterial2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="80"
+                android:text="Material 2:"
+                android:textSize="@dimen/text_size_label" />
+
+            <TextView
+                android:id="@+id/textViewQuantidade2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_label"
+                android:layout_weight="20"
+                android:text="Quantid.:"
+                android:textSize="@dimen/text_size_label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edittext_height"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spinner_material2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_weight="80"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_edittext"
+
+                />
+
+            <EditText
+                android:id="@+id/formulario_quantidade2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_weight="20"
+                android:background="@drawable/edit_text_basico"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:padding="@dimen/padding"
+                android:textSize="@dimen/text_size_edittext" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewObservacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_label"
+            android:layout_weight="28"
+            android:text="Observação:"
+            android:textSize="@dimen/text_size_label" />
+
+        <EditText
+            android:id="@+id/formulario_observacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:background="@drawable/edit_text_basico"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/padding"
+            android:textSize="@dimen/text_size_edittext"
+            android:gravity="start"
+            android:lines="20"
+            android:maxLength="400"
+            />
+
+        <View
+            android:id="@+id/divider13"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginVertical="@dimen/margin"
+            android:layout_weight="1"
+            android:background="?android:attr/listDivider" />
+
+
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/foto_height"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+
+            <ImageView
+                android:id="@+id/formulario_foto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/foto"
+                android:layout_weight="80"
+                android:background="#6E270909"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/foto_height"
+                android:layout_weight="20">
+
+                <Button
+                    android:id="@+id/formulario_botao_foto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fundo_camera"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout> -->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

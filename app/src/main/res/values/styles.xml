@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+
+
+        <item name="popupTheme">@style/AppTheme.MyPopupMenu</item>
+        <item name="actionBarSize">@dimen/foto_height</item>
+        <item name="actionBarStyle">@style/AppTheme.MyActionBarStyle</item>
+
+
+        <item name="actionOverflowButtonStyle">@style/AppTheme.MyActionOverFlowButtonStyle</item>
+
+
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+
+    </style>
+
+    <style name="PopupMenuListView" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:textSize">@dimen/text_size_edittext</item>
+        <item name="android:divider">#dddddd</item>
+        <item name="android:dividerHeight">3dp</item>
+    </style>
+
+    <style name="AppTheme.MyActionBarStyle" parent="Widget.AppCompat.ActionBar" >
+
+
+
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+    <style name="AppTheme.MyActionOverFlowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+
+        <item name="android:src">@drawable/menu_branco</item>
+
+
+
+    </style>|
+
+    <style name="AppTheme.MyPopupMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+
+        <item name="android:textSize">@dimen/text_size_edittext</item>
+        <item name="dividerVertical">@color/colorPrimary</item>
+        <item name="android:dividerHeight">1dp</item>
+
+    </style>
+
+
+
+
+
+</resources>

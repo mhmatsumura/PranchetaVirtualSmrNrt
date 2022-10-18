@@ -1,0 +1,1302 @@
+<resources>
+    <string name="app_name">PRANCHETA VIRTUAL</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_formulario">SERVIÇO</string>
+
+
+    <string-array name="Tipo_Eqp">
+        <item></item>
+        <item>RA</item>
+        <item>GA</item>
+        <item>RT</item>
+        <item>TR</item>
+        <item>CO</item>
+        <item>GM</item>
+    </string-array>
+
+    <string-array name="Dnps">
+        <item></item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="Materiais">
+        <item></item>
+        <item>Bateria</item>
+        <item>Carregador Cooper</item>
+        <item>DPS</item>
+        <item>Dijuntor</item>
+        <item>Fonte 24v/5v</item>
+        <item>Fonte 127v/5v</item>
+    </string-array>
+
+    <!--<string-array name="Descricoes">
+        <item></item>
+        <item>Implantado Loop Scheme.</item>
+        <item>Implantado Automação</item>
+        <item>Trocado bateria.</item>
+        <item>Trocado carregador Cooper.</item>
+        <item>Trocado carregador e bateria.</item>
+        <item>Trocado disjuntor.</item>
+        <item>Trocado conversor fibra/rede.</item>
+        <item>Trocado módulo GPRS.</item>
+        <item>Trocado cabo de rede.</item>
+        <item>Trocado cabo óptico.</item>
+        <item>Trocado cabo serial.</item>
+        <item>Implantado ajuste OPR.</item>
+        <item>Refeito ponto do cabo Relé/Mecanismo.</item>
+        <item>Bypass do DPS.</item>
+        <item>Trocado DPS</item>
+        <item>Trocado fonte 24v/5v.</item>
+        <item>Trocado fonte 127v/5v.</item>
+    </string-array>-->
+
+    <string-array name="Descricoes">
+        <item></item>
+        <item>*151* - Verificação EQP interrogado na RD</item>
+        <item>*302* - Implantar OPR</item>
+        <item>*151* - Implantar loopscheme</item>
+        <item>*151* - Automação</item>
+        <item>*180* - Sanar anomalia comunicação SAT</item>
+        <item>*304* - Coletar oscilografia</item>
+        <item>*323* - Verificar bateria</item>
+        <item>*322* - Trocar bateria</item>
+        <item>*723* - Manutenção corretiva RT</item>
+        <item>*728* - Manutenção corretiva religador</item>
+    </string-array>
+
+    <string-array name="Tipo_Comunicacao">
+        <item></item>
+        <item>FIBRA</item>
+        <item>GPRS</item>
+        <item>SATEL.</item>
+        <item>Ñ AUTO.</item>
+    </string-array>
+
+    <string-array name="Regioes">
+        <item></item>
+        <item>84800</item>
+        <item>80492</item>
+        <item>82160</item>
+    </string-array>
+
+    <string-array name="Frases">
+        <item></item>
+        <item>-Efetuado teste de LoopScheme no RA.</item>
+        <item>-Automatizar e disponibilizar para operação.</item>
+        <item>-Executado ajustes necessários para automação via xxxx</item>
+        <item>-Confirmado comunicação junto a Automação LNA - OK.</item>
+        <item>-Efetuado teste de comando junto à Automação LNA - RA comunicação OK.</item>
+        <item>-Substituído conversor fibra/rede</item>
+        <item>-Instalado Fonte 24/5V.</item>
+        <item>-Aguardando atualização do CIDIS.</item>
+        <item>-Efetuado montagem de Kit GPRS.</item>
+        <item>-Tentativa de automação sem sucesso</item>
+        <item>-Sem sinal GPRS TIM</item>
+        <item>-Substituição de modulo GPRS por indisponibilidade de sinal 2G.</item>
+        <item>-Gerado GSMD xxxx/xxxx para retirada de equipamento da rede e entrega na oficina eletromecânica de xxx para manutenção.</item>
+        <item>-Baixa OPW: Efetuado implantação ajuste OPR xxxx/xxxx, em substituição OPR xxxx/xxxx, conforme SDS xxxxx pela OS xxxxx.</item>
+        <item>-Executado implantação em campo OPR xxxx/xxxx conforme solicitação.</item>
+        <item>-Efetuado ajuste de Elos das TripSavers conforme solicitado pela SDS xxxxx.Atendimento pela OS xxxxxx - Novo ajuste xx K.</item>
+        <item>-Executado alteração de DNP conforme solicitação da Automação.</item>
+        <item>-Efetuado teste comando junto ao COD. RA ok.</item>
+        <item>-Efetuado monitoramento de comunicação.</item>
+        <item>-GPRS apresenta indisponibilidade eventual por conta da Operadora de Sinal.Não há ação efetiva junto ao GPRS.</item>
+        <item>-Aguardando conclusão da automação - SASE.</item>
+        <item>-Efetuado ajuste de parâmetros de automação em campo </item>
+        <item>-Efetuado coleta de oscilografia referente ao dia xx/xx/xxxx, conforme solicitado.</item>
+
+    </string-array>
+
+    <string-array name="Cidades">
+        <item>800240 - ABATIÁ</item>
+        <item>696010 - ABATIÁ</item>
+        <item>696020 - ADRIANÓPOLIS</item>
+        <item>800600 - ADRIANÓPOLIS</item>
+        <item>696030 - AGUDOS DO SUL</item>
+        <item>801320 - AGUDOS DO SUL</item>
+        <item>696040 - ALMIRANTE TAMANDARÉ</item>
+        <item>801680 - ALMIRANTE TAMANDARÉ</item>
+        <item>801800 - ALTAMIRA DO PARANÁ</item>
+        <item>696050 - ALTAMIRA DO PARANÁ</item>
+        <item>896120 - ALTO PARAÍSO</item>
+        <item>695170 - ALTO PARAÍSO</item>
+        <item>802640 - ALTO PARANÁ</item>
+        <item>696060 - ALTO PARANÁ</item>
+        <item>699250 - ALTO PIQUIRI</item>
+        <item>802760 - ALTO PIQUIRI</item>
+        <item>802400 - ALTÔNIA</item>
+        <item>699240 - ALTÔNIA</item>
+        <item>803240 - ALVORADA DO SUL</item>
+        <item>696080 - ALVORADA DO SUL</item>
+        <item>803360 - AMAPORÃ</item>
+        <item>696090 - AMAPORÃ</item>
+        <item>803720 - AMPÉRE</item>
+        <item>699790 - AMPÉRE</item>
+        <item>696130 - ANAHY</item>
+        <item>803780 - ANAHY</item>
+        <item>803840 - ANDIRÁ</item>
+        <item>696110 - ANDIRÁ</item>
+        <item>804080 - ÂNGULO</item>
+        <item>695050 - ÂNGULO</item>
+        <item>804320 - ANTONINA</item>
+        <item>696120 - ANTONINA</item>
+        <item>696100 - ANTÔNIO OLINTO</item>
+        <item>804440 - ANTÔNIO OLINTO</item>
+        <item>804920 - APUCARANA</item>
+        <item>699670 - APUCARANA</item>
+        <item>805160 - ARAPONGAS</item>
+        <item>699330 - ARAPONGAS</item>
+        <item>696160 - ARAPOTI</item>
+        <item>805280 - ARAPOTI</item>
+        <item>805400 - ARAPUÃ</item>
+        <item>696170 - ARAPUÃ</item>
+        <item>699770 - ARARUNA</item>
+        <item>805760 - ARARUNA</item>
+        <item>699730 - ARAUCÁRIA</item>
+        <item>805880 - ARAUCÁRIA</item>
+        <item>696180 - ARIRANHA DO IVAÍ</item>
+        <item>806120 - ARIRANHA DO IVAÍ</item>
+        <item>806240 - ASSAÍ</item>
+        <item>699320 - ASSAÍ</item>
+        <item>806360 - ASSIS CHATEAUBRIAND</item>
+        <item>699420 - ASSIS CHATEAUBRIAND</item>
+        <item>806480 - ASTORGA</item>
+        <item>696210 - ASTORGA</item>
+        <item>806600 - ATALAIA</item>
+        <item>696220 - ATALAIA</item>
+        <item>696230 - BALSA NOVA</item>
+        <item>807440 - BALSA NOVA</item>
+        <item>807560 - BANDEIRANTES</item>
+        <item>696240 - BANDEIRANTES</item>
+        <item>699570 - BARBOSA FERRAZ</item>
+        <item>807800 - BARBOSA FERRAZ</item>
+        <item>699900 - BARRACÃO</item>
+        <item>808040 - BARRACÃO</item>
+        <item>696620 - BELA VISTA DO CAROBÁ</item>
+        <item>809240 - BELA VISTA DO CAROBÁ</item>
+        <item>696280 - BELA VISTA DO PARAÍSO</item>
+        <item>809600 - BELA VISTA DO PARAÍSO</item>
+        <item>810200 - BITURUNA</item>
+        <item>696290 - BITURUNA</item>
+        <item>810320 - BOA ESPERANÇA</item>
+        <item>696300 - BOA ESPERANÇA</item>
+        <item>810560 - BOA ESPERANÇA DO IGUAÇU</item>
+        <item>695180 - BOA ESPERANÇA DO IGUAÇU</item>
+        <item>810680 - BOA VENTURA DE SÃO ROQUE</item>
+        <item>696250 - BOA VENTURA DE SÃO ROQUE</item>
+        <item>696260 - BOA VISTA DA APARECIDA</item>
+        <item>811040 - BOA VISTA DA APARECIDA</item>
+        <item>811160 - BOCAIÚVA DO SUL</item>
+        <item>696310 - BOCAIÚVA DO SUL</item>
+        <item>696315 - BOM JESUS DO SUL</item>
+        <item>811400 - BOM JESUS DO SUL</item>
+        <item>696320 - BOM SUCESSO</item>
+        <item>811760 - BOM SUCESSO</item>
+        <item>811880 - BOM SUCESSO DO SUL</item>
+        <item>695190 - BOM SUCESSO DO SUL</item>
+        <item>812360 - BORRAZÓPOLIS</item>
+        <item>696330 - BORRAZÓPOLIS</item>
+        <item>696340 - BRAGANEY</item>
+        <item>812450 - BRAGANEY</item>
+        <item>812600 - BRASILÂNDIA DO SUL</item>
+        <item>695090 - BRASILÂNDIA DO SUL</item>
+        <item>813080 - CAFEARA</item>
+        <item>696400 - CAFEARA</item>
+        <item>696450 - CAFELÂNDIA DO OESTE</item>
+        <item>813320 - CAFELÂNDIA DO OESTE</item>
+        <item>813440 - CAFEZAL DO SUL</item>
+        <item>695100 - CAFEZAL DO SUL</item>
+        <item>813800 - CALIFÓRNIA</item>
+        <item>696350 - CALIFÓRNIA</item>
+        <item>696360 - CAMBARÁ</item>
+        <item>814040 - CAMBARÁ</item>
+        <item>696370 - CAMBÉ</item>
+        <item>814160 - CAMBÉ</item>
+        <item>814280 - CAMBIRA</item>
+        <item>696380 - CAMBIRA</item>
+        <item>814640 - CAMPINA DA LAGOA</item>
+        <item>696390 - CAMPINA DA LAGOA</item>
+        <item>814880 - CAMPINA DO SIMÃO</item>
+        <item>696385 - CAMPINA DO SIMÃO</item>
+        <item>814760 - CAMPINA GRANDE DO SUL</item>
+        <item>699830 - CAMPINA GRANDE DO SUL</item>
+        <item>696420 - CAMPO BONITO</item>
+        <item>815000 - CAMPO BONITO</item>
+        <item>696410 - CAMPO DO TENENTE</item>
+        <item>815360 - CAMPO DO TENENTE</item>
+        <item>815480 - CAMPO LARGO</item>
+        <item>815720 - CAMPO MAGRO</item>
+        <item>696140 - CAMPO MAGRO</item>
+        <item>696430 - CAMPO MOURÃO</item>
+        <item>815840 - CAMPO MOURÃO</item>
+        <item>696440 - CÂNDIDO DE ABREU</item>
+        <item>816080 - CÂNDIDO DE ABREU</item>
+        <item>822260 - CANDÓI</item>
+        <item>695200 - CANDÓI</item>
+        <item>816560 - CANTAGALO</item>
+        <item>696460 - CANTAGALO</item>
+        <item>816800 - CAPANEMA</item>
+        <item>699930 - CAPANEMA</item>
+        <item>699520 - CAPITÃO LEÔNIDAS MARQUES</item>
+        <item>816920 - CAPITÃO LEÔNIDAS MARQUES</item>
+        <item>817040 - CARAMBEÍ</item>
+        <item>817400 - CARLÓPOLIS</item>
+        <item>696470 - CARLÓPOLIS</item>
+        <item>817760 - CASCAVEL</item>
+        <item>699490 - CASCAVEL</item>
+        <item>818000 - CASTRO</item>
+        <item>699540 - CASTRO</item>
+        <item>818120 - CATANDUVAS</item>
+        <item>696500 - CATANDUVAS</item>
+        <item>818720 - CENTENÁRIO DO SUL</item>
+        <item>696510 - CENTENÁRIO DO SUL</item>
+        <item>818960 - CERRO AZUL</item>
+        <item>696520 - CERRO AZUL</item>
+        <item>699440 - CÉU AZUL</item>
+        <item>819080 - CÉU AZUL</item>
+        <item>819200 - CHOPINZINHO</item>
+        <item>699580 - CHOPINZINHO</item>
+        <item>819320 - CIANORTE</item>
+        <item>699870 - CIANORTE</item>
+        <item>819440 - CIDADE GAÚCHA</item>
+        <item>696560 - CIDADE GAÚCHA</item>
+        <item>819680 - CLEVELÂNDIA</item>
+        <item>696570 - CLEVELÂNDIA</item>
+        <item>819800 - COLOMBO</item>
+        <item>699760 - COLOMBO</item>
+        <item>820400 - COLORADO</item>
+        <item>696590 - COLORADO</item>
+        <item>820880 - CONGONHINHAS</item>
+        <item>696600 - CONGONHINHAS</item>
+        <item>696610 - CONSELHEIRO MAIRINCK</item>
+        <item>821000 - CONSELHEIRO MAIRINCK</item>
+        <item>821240 - CONTENDA</item>
+        <item>699970 - CONTENDA</item>
+        <item>821480 - CORBÉLIA</item>
+        <item>696630 - CORBÉLIA</item>
+        <item>821600 - CORNÉLIO PROCÓPIO</item>
+        <item>696640 - CORNÉLIO PROCÓPIO</item>
+        <item>696645 - CORONEL DOMINGOS SOARES</item>
+        <item>821720 - CORONEL DOMINGOS SOARES</item>
+        <item>696650 - CORONEL VIVIDA</item>
+        <item>821960 - CORONEL VIVIDA</item>
+        <item>696660 - CORUMBATAÍ DO SUL</item>
+        <item>822200 - CORUMBATAÍ DO SUL</item>
+        <item>823280 - CRUZ MACHADO</item>
+        <item>696680 - CRUZ MACHADO</item>
+        <item>822800 - CRUZEIRO DO IGUAÇU</item>
+        <item>695210 - CRUZEIRO DO IGUAÇU</item>
+        <item>822920 - CRUZEIRO DO OESTE</item>
+        <item>699260 - CRUZEIRO DO OESTE</item>
+        <item>823160 - CRUZEIRO DO SUL</item>
+        <item>696670 - CRUZEIRO DO SUL</item>
+        <item>696681 - CRUZMALTINA</item>
+        <item>823400 - CRUZMALTINA</item>
+        <item>823620 - CURITIBA</item>
+        <item>818790 - CURITIBA NORTE</item>
+        <item>825800 - CURIÚVA</item>
+        <item>696700 - CURIÚVA</item>
+        <item>826280 - DIAMANTE DO NORTE</item>
+        <item>696710 - DIAMANTE DO NORTE</item>
+        <item>696490 - DIAMANTE DO OESTE</item>
+        <item>826200 - DIAMANTE DO OESTE</item>
+        <item>826160 - DIAMANTE DO SUL</item>
+        <item>696820 - DIAMANTE DO SUL</item>
+        <item>826640 - DOIS VIZINHOS</item>
+        <item>699890 - DOIS VIZINHOS</item>
+        <item>826880 - DOURADINA</item>
+        <item>696720 - DOURADINA</item>
+        <item>827120 - DOUTOR CAMARGO</item>
+        <item>696730 - DOUTOR CAMARGO</item>
+        <item>895040 - DOUTOR ULYSSES</item>
+        <item>695040 - DOUTOR ULYSSES</item>
+        <item>827960 - ENÉAS MARQUES</item>
+        <item>696740 - ENÉAS MARQUES</item>
+        <item>828200 - ENGENHEIRO BELTRÃO</item>
+        <item>699280 - ENGENHEIRO BELTRÃO</item>
+        <item>828260 - ENTRE RIOS DO OESTE</item>
+        <item>695220 - ENTRE RIOS DO OESTE</item>
+        <item>810440 - ESPERANÇA NOVA</item>
+        <item>695225 - ESPERANÇA NOVA</item>
+        <item>696840 - ESPIGÃO ALTO DO IGUAÇU</item>
+        <item>828920 - ESPIGÃO ALTO DO IGUAÇU</item>
+        <item>829520 - FAROL</item>
+        <item>695110 - FAROL</item>
+        <item>829640 - FAXINAL</item>
+        <item>696760 - FAXINAL</item>
+        <item>695000 - FAZENDA RIO GRANDE</item>
+        <item>830060 - FAZENDA RIO GRANDE</item>
+        <item>830120 - FÊNIX</item>
+        <item>696770 - FÊNIX</item>
+        <item>830240 - FERNANDES PINHEIRO</item>
+        <item>696773 - FERNANDES PINHEIRO</item>
+        <item>830600 - FIGUEIRA</item>
+        <item>696750 - FIGUEIRA</item>
+        <item>830960 - FLOR DA SERRA DO SUL</item>
+        <item>695230 - FLOR DA SERRA DO SUL</item>
+        <item>696780 - FLORAÍ</item>
+        <item>831080 - FLORAÍ</item>
+        <item>696790 - FLORESTA</item>
+        <item>831200 - FLORESTA</item>
+        <item>831320 - FLORESTÓPOLIS</item>
+        <item>696800 - FLORESTÓPOLIS</item>
+        <item>696810 - FLORIDA</item>
+        <item>831560 - FLORIDA</item>
+        <item>832040 - FORMOSA DO OESTE</item>
+        <item>699470 - FORMOSA DO OESTE</item>
+        <item>699480 - FOZ DO IGUAÇU</item>
+        <item>832160 - FOZ DO IGUAÇU</item>
+        <item>696815 - FOZ DO JORDÃO</item>
+        <item>887750 - FOZ DO JORDÃO</item>
+        <item>832280 - FRANCISCO ALVES</item>
+        <item>699940 - FRANCISCO ALVES</item>
+        <item>832400 - FRANCISCO BELTRÃO</item>
+        <item>699640 - FRANCISCO BELTRÃO</item>
+        <item>833120 - GENERAL CARNEIRO</item>
+        <item>696980 - GENERAL CARNEIRO</item>
+        <item>699590 - GODOY MOREIRA</item>
+        <item>833300 - GODOY MOREIRA</item>
+        <item>699290 - GOIOERÊ</item>
+        <item>833360 - GOIOERÊ</item>
+        <item>833480 - GOIOXIM</item>
+        <item>696850 - GOIOXIM</item>
+        <item>699710 - GRANDES RIOS</item>
+        <item>833840 - GRANDES RIOS</item>
+        <item>834080 - GUAÍRA</item>
+        <item>699460 - GUAÍRA</item>
+        <item>834320 - GUAIRAÇA</item>
+        <item>696900 - GUAIRAÇA</item>
+        <item>834560 - GUAMIRANGA</item>
+        <item>696903 - GUAMIRANGA</item>
+        <item>834800 - GUAPIRAMA</item>
+        <item>696910 - GUAPIRAMA</item>
+        <item>835040 - GUAPOREMA</item>
+        <item>696920 - GUAPOREMA</item>
+        <item>696930 - GUARACI</item>
+        <item>835280 - GUARACI</item>
+        <item>835640 - GUARANIAÇU</item>
+        <item>699840 - GUARANIAÇU</item>
+        <item>699500 - GUARAPUAVA</item>
+        <item>835760 - GUARAPUAVA</item>
+        <item>835880 - GUARAQUEÇABA</item>
+        <item>696960 - GUARAQUEÇABA</item>
+        <item>836000 - GUARATUBA</item>
+        <item>696970 - GUARATUBA</item>
+        <item>836720 - HONÓRIO SERPA</item>
+        <item>695240 - HONÓRIO SERPA</item>
+        <item>836960 - IBAITI</item>
+        <item>696990 - IBAITI</item>
+        <item>697100 - IBEMA</item>
+        <item>837080 - IBEMA</item>
+        <item>837320 - IBIPORÃ</item>
+        <item>697070 - IBIPORÃ</item>
+        <item>837560 - ICARAÍMA</item>
+        <item>697000 - ICARAÍMA</item>
+        <item>837800 - IGUARAÇU</item>
+        <item>697010 - IGUARAÇU</item>
+        <item>837980 - IGUATU</item>
+        <item>697160 - IGUATU</item>
+        <item>838160 - IMBAÚ</item>
+        <item>838400 - IMBITUVA</item>
+        <item>697020 - IMBITUVA</item>
+        <item>838520 - INÁCIO MARTINS</item>
+        <item>697030 - INÁCIO MARTINS</item>
+        <item>838640 - INAJÁ</item>
+        <item>697040 - INAJÁ</item>
+        <item>838760 - INDIANÓPOLIS</item>
+        <item>697050 - INDIANÓPOLIS</item>
+        <item>839240 - IPIRANGA</item>
+        <item>697060 - IPIRANGA</item>
+        <item>839360 - IPORÃ</item>
+        <item>699230 - IPORÃ</item>
+        <item>695250 - IRACEMA DO OESTE</item>
+        <item>839480 - IRACEMA DO OESTE</item>
+        <item>839720 - IRATI</item>
+        <item>697080 - IRATI</item>
+        <item>839960 - IRETAMA</item>
+        <item>697090 - IRETAMA</item>
+        <item>699720 - ITAGUAJÉ</item>
+        <item>840320 - ITAGUAJÉ</item>
+        <item>804760 - ITAIPULÂNDIA</item>
+        <item>695260 - ITAIPULÂNDIA</item>
+        <item>840560 - ITAMBARACÁ</item>
+        <item>697110 - ITAMBARACÁ</item>
+        <item>840680 - ITAMBÉ</item>
+        <item>697120 - ITAMBÉ</item>
+        <item>697130 - ITAPEJARA DO OESTE</item>
+        <item>840920 - ITAPEJARA DO OESTE</item>
+        <item>840980 - ITAPERUSSU</item>
+        <item>695030 - ITAPERUSSU</item>
+        <item>841160 - ITAÚNA DO SUL</item>
+        <item>697140 - ITAÚNA DO SUL</item>
+        <item>841280 - IVAÍ</item>
+        <item>697150 - IVAÍ</item>
+        <item>841640 - IVAIPORÃ</item>
+        <item>699380 - IVAIPORÃ</item>
+        <item>841880 - IVATÉ</item>
+        <item>695120 - IVATÉ</item>
+        <item>842000 - IVATUBA</item>
+        <item>697170 - IVATUBA</item>
+        <item>697180 - JABOTI</item>
+        <item>842240 - JABOTI</item>
+        <item>842960 - JAGUAPITÃ</item>
+        <item>697200 - JAGUAPITÃ</item>
+        <item>843080 - JAGUARIAÍVA</item>
+        <item>697210 - JAGUARIAÍVA</item>
+        <item>843320 - JANDAIA DO SUL</item>
+        <item>697300 - JANDAIA DO SUL</item>
+        <item>843800 - JANIÓPOLIS</item>
+        <item>697230 - JANIÓPOLIS</item>
+        <item>843920 - JAPIRA</item>
+        <item>697240 - JAPIRA</item>
+        <item>844040 - JAPURÁ</item>
+        <item>697250 - JAPURÁ</item>
+        <item>844280 - JARDIM ALEGRE</item>
+        <item>697260 - JARDIM ALEGRE</item>
+        <item>844400 - JARDIM OLINDA</item>
+        <item>697220 - JARDIM OLINDA</item>
+        <item>844640 - JATAIZINHO</item>
+        <item>697280 - JATAIZINHO</item>
+        <item>844760 - JESUÍTAS</item>
+        <item>697400 - JESUÍTAS</item>
+        <item>845000 - JOAQUIM TÁVORA</item>
+        <item>697290 - JOAQUIM TÁVORA</item>
+        <item>845480 - JUNDIAÍ DO SUL</item>
+        <item>697330 - JUNDIAÍ DO SUL</item>
+        <item>845600 - JURANDA</item>
+        <item>697270 - JURANDA</item>
+        <item>845720 - JUSSARA</item>
+        <item>697310 - JUSSARA</item>
+        <item>845960 - KALORÉ</item>
+        <item>697320 - KALORÉ</item>
+        <item>846440 - LAPA</item>
+        <item>699510 - LAPA</item>
+        <item>846560 - LARANJAL</item>
+        <item>695360 - LARANJAL</item>
+        <item>846680 - LARANJEIRAS DO SUL</item>
+        <item>697340 - LARANJEIRAS DO SUL</item>
+        <item>847040 - LEÓPOLIS</item>
+        <item>697350 - LEÓPOLIS</item>
+        <item>847280 - LIDIANÓPOLIS</item>
+        <item>697480 - LIDIANÓPOLIS</item>
+        <item>847320 - LINDOESTE</item>
+        <item>697420 - LINDOESTE</item>
+        <item>847640 - LOANDA</item>
+        <item>697360 - LOANDA</item>
+        <item>847760 - LOBATO</item>
+        <item>848000 - LONDRINA</item>
+        <item>699310 - LONDRINA</item>
+        <item>848240 - LUIZIANA</item>
+        <item>697430 - LUIZIANA</item>
+        <item>848360 - LUNARDELLI</item>
+        <item>697370 - LUNARDELLI</item>
+        <item>848480 - LUPIONÓPOLIS</item>
+        <item>697390 - LUPIONÓPOLIS</item>
+        <item>848840 - MALLET</item>
+        <item>697380 - MALLET</item>
+        <item>849080 - MAMBORÊ</item>
+        <item>697410 - MAMBORÊ</item>
+        <item>849200 - MANDAGUAÇU</item>
+        <item>699620 - MANDAGUAÇU</item>
+        <item>849320 - MANDAGUARI</item>
+        <item>699610 - MANDAGUARI</item>
+        <item>849560 - MANDIRITUBA</item>
+        <item>697440 - MANDIRITUBA</item>
+        <item>695440 - MANFRINÓPOLIS</item>
+        <item>827760 - MANFRINÓPOLIS</item>
+        <item>849680 - MANGUEIRINHA</item>
+        <item>697450 - MANGUEIRINHA</item>
+        <item>849800 - MANOEL RIBAS</item>
+        <item>697460 - MANOEL RIBAS</item>
+        <item>699550 - MARECHAL CÂNDIDO RONDON</item>
+        <item>850280 - MARECHAL CÂNDIDO RONDON</item>
+        <item>699270 - MARIA HELENA</item>
+        <item>850520 - MARIA HELENA</item>
+        <item>699350 - MARIALVA</item>
+        <item>850640 - MARIALVA</item>
+        <item>850880 - MARILÂNDIA DO SUL</item>
+        <item>697500 - MARILÂNDIA DO SUL</item>
+        <item>851000 - MARILENA</item>
+        <item>697510 - MARILENA</item>
+        <item>851240 - MARILUZ</item>
+        <item>697520 - MARILUZ</item>
+        <item>851480 - MARINGÁ</item>
+        <item>699360 - MARINGÁ</item>
+        <item>851600 - MARIÓPOLIS</item>
+        <item>697540 - MARIÓPOLIS</item>
+        <item>695270 - MARIPÁ</item>
+        <item>897680 - MARIPÁ</item>
+        <item>851960 - MARMELEIRO</item>
+        <item>697550 - MARMELEIRO</item>
+        <item>697551 - MARQUINHO</item>
+        <item>852200 - MARQUINHO</item>
+        <item>852320 - MARUMBI</item>
+        <item>697560 - MARUMBI</item>
+        <item>852440 - MATELÂNDIA</item>
+        <item>699700 - MATELÂNDIA</item>
+        <item>852560 - MATINHOS</item>
+        <item>695130 - MATO RICO</item>
+        <item>852650 - MATO RICO</item>
+        <item>852680 - MAUÁ DA SERRA</item>
+        <item>697470 - MAUÁ DA SERRA</item>
+        <item>852800 - MEDIANEIRA</item>
+        <item>697570 - MEDIANEIRA</item>
+        <item>852940 - MERCEDES</item>
+        <item>695280 - MERCEDES</item>
+        <item>853040 - MIRADOR</item>
+        <item>697590 - MIRADOR</item>
+        <item>853280 - MIRASELVA</item>
+        <item>697600 - MIRASELVA</item>
+        <item>853520 - MISSAL</item>
+        <item>697580 - MISSAL</item>
+        <item>853880 - MOREIRA SALES</item>
+        <item>697610 - MOREIRA SALES</item>
+        <item>854000 - MORRETES</item>
+        <item>697620 - MORRETES</item>
+        <item>854240 - MUNHOZ DE MELLO</item>
+        <item>697630 - MUNHOZ DE MELLO</item>
+        <item>855320 - NOSSA SENHORA DAS GRAÇAS</item>
+        <item>697640 - NOSSA SENHORA DAS GRAÇAS</item>
+        <item>855440 - NOVA ALIANÇA DO IVAÍ</item>
+        <item>697650 - NOVA ALIANÇA DO IVAÍ</item>
+        <item>855560 - NOVA AMÉRICA DA COLINA</item>
+        <item>697660 - NOVA AMÉRICA DA COLINA</item>
+        <item>855800 - NOVA AURORA</item>
+        <item>699430 - NOVA AURORA</item>
+        <item>856520 - NOVA CANTU</item>
+        <item>697670 - NOVA CANTU</item>
+        <item>856760 - NOVA ESPERANÇA</item>
+        <item>699370 - NOVA ESPERANÇA</item>
+        <item>856640 - NOVA ESPERANÇA DO SUDOESTE</item>
+        <item>695290 - NOVA ESPERANÇA DO SUDOESTE</item>
+        <item>857000 - NOVA FÁTIMA</item>
+        <item>697700 - NOVA FÁTIMA</item>
+        <item>698840 - NOVA LARANJEIRAS</item>
+        <item>898280 - NOVA LARANJEIRAS</item>
+        <item>857360 - NOVA LONDRINA</item>
+        <item>697710 - NOVA LONDRINA</item>
+        <item>857720 - NOVA OLÍMPIA</item>
+        <item>697680 - NOVA OLÍMPIA</item>
+        <item>697690 - NOVA PRATA DO IGUAÇU</item>
+        <item>857840 - NOVA PRATA DO IGUAÇU</item>
+        <item>875960 - NOVA SANTA BÁRBARA</item>
+        <item>695060 - NOVA SANTA BÁRBARA</item>
+        <item>858200 - NOVA SANTA ROSA</item>
+        <item>697720 - NOVA SANTA ROSA</item>
+        <item>697730 - NOVA TEBAS</item>
+        <item>858260 - NOVA TEBAS</item>
+        <item>840080 - NOVO ITACOLOMI</item>
+        <item>695070 - NOVO ITACOLOMI</item>
+        <item>859280 - ORTIGUEIRA</item>
+        <item>697760 - ORTIGUEIRA</item>
+        <item>859520 - OURIZONA</item>
+        <item>699860 - OURIZONA</item>
+        <item>697740 - OURO VERDE DO OESTE</item>
+        <item>859640 - OURO VERDE DO OESTE</item>
+        <item>860120 - PAIÇANDU</item>
+        <item>860240 - PALMAS</item>
+        <item>697770 - PALMAS</item>
+        <item>860360 - PALMEIRA</item>
+        <item>699600 - PALMEIRA</item>
+        <item>860720 - PALMITAL</item>
+        <item>697780 - PALMITAL</item>
+        <item>861080 - PALOTINA</item>
+        <item>699410 - PALOTINA</item>
+        <item>861560 - PARAÍSO DO NORTE</item>
+        <item>697800 - PARAÍSO DO NORTE</item>
+        <item>861680 - PARANACITY</item>
+        <item>697810 - PARANACITY</item>
+        <item>862040 - PARANAGUÁ</item>
+        <item>697820 - PARANAGUÁ</item>
+        <item>862280 - PARANAPOEMA</item>
+        <item>697830 - PARANAPOEMA</item>
+        <item>862400 - PARANAVAÍ</item>
+        <item>699660 - PARANAVAÍ</item>
+        <item>695300 - PATO BRAGADO</item>
+        <item>862760 - PATO BRAGADO</item>
+        <item>699650 - PATO BRANCO</item>
+        <item>862880 - PATO BRANCO</item>
+        <item>863360 - PAULA FREITAS</item>
+        <item>697860 - PAULA FREITAS</item>
+        <item>863600 - PAULO FRONTIN</item>
+        <item>697870 - PAULO FRONTIN</item>
+        <item>863840 - PEABIRU</item>
+        <item>697880 - PEABIRU</item>
+        <item>864200 - PEROBAL</item>
+        <item>697885 - PEROBAL</item>
+        <item>864320 - PÉROLA</item>
+        <item>697890 - PÉROLA</item>
+        <item>864440 - PÉROLA DO OESTE</item>
+        <item>697900 - PÉROLA DO OESTE</item>
+        <item>864680 - PIEN</item>
+        <item>697910 - PIEN</item>
+        <item>864920 - PINHAIS</item>
+        <item>865160 - PINHAL DE SÃO BENTO</item>
+        <item>695310 - PINHAL DE SÃO BENTO</item>
+        <item>865040 - PINHALÃO</item>
+        <item>697920 - PINHALÃO</item>
+        <item>865520 - PINHÃO</item>
+        <item>697930 - PINHÃO</item>
+        <item>865880 - PIRAÍ DO SUL</item>
+        <item>697940 - PIRAÍ DO SUL</item>
+        <item>866120 - PIRAQUARA</item>
+        <item>697950 - PIRAQUARA</item>
+        <item>866360 - PITANGA</item>
+        <item>697960 - PITANGA</item>
+        <item>866480 - PITANGUEIRAS</item>
+        <item>866600 - PLANALTINA DO PARANÁ</item>
+        <item>699910 - PLANALTINA DO PARANÁ</item>
+        <item>866730 - PLANALTO</item>
+        <item>699530 - PLANALTO</item>
+        <item>697990 - PONTA GROSSA</item>
+        <item>866960 - PONTA GROSSA</item>
+        <item>868880 - PONTAL DO PARANÁ</item>
+        <item>867200 - PORECATU</item>
+        <item>867440 - PORTO AMAZONAS</item>
+        <item>698010 - PORTO AMAZONAS</item>
+        <item>868270 - PORTO BARREIRO</item>
+        <item>698011 - PORTO BARREIRO</item>
+        <item>868160 - PORTO RICO</item>
+        <item>698020 - PORTO RICO</item>
+        <item>868680 - PORTO UNIÃO</item>
+        <item>698060 - PORTO UNIÃO</item>
+        <item>868640 - PORTO VITÓRIA</item>
+        <item>698030 - PORTO VITÓRIA</item>
+        <item>898720 - PRADO FERREIRA</item>
+        <item>869000 - PRANCHITA</item>
+        <item>698040 - PRANCHITA</item>
+        <item>698050 - PRESIDENTE CASTELO BRANCO</item>
+        <item>869240 - PRESIDENTE CASTELO BRANCO</item>
+        <item>869480 - PRIMEIRO DE MAIO</item>
+        <item>699690 - PRIMEIRO DE MAIO</item>
+        <item>869720 - PRUDENTÓPOLIS</item>
+        <item>698070 - PRUDENTÓPOLIS</item>
+        <item>870080 - QUARTO CENTENÁRIO</item>
+        <item>698690 - QUARTO CENTENÁRIO</item>
+        <item>869960 - QUATIGUÁ</item>
+        <item>698080 - QUATIGUÁ</item>
+        <item>870200 - QUATRO BARRAS</item>
+        <item>698090 - QUATRO BARRAS</item>
+        <item>695320 - QUATRO PONTES</item>
+        <item>870440 - QUATRO PONTES</item>
+        <item>870560 - QUEDAS DO IGUAÇU</item>
+        <item>698100 - QUEDAS DO IGUAÇU</item>
+        <item>870680 - QUERÊNCIA DO NORTE</item>
+        <item>698110 - QUERÊNCIA DO NORTE</item>
+        <item>870800 - QUINTA DO SOL</item>
+        <item>698120 - QUINTA DO SOL</item>
+        <item>870920 - QUITANDINHA</item>
+        <item>698130 - QUITANDINHA</item>
+        <item>871040 - RAMILÂNDIA</item>
+        <item>695330 - RAMILÂNDIA</item>
+        <item>871120 - RANCHO ALEGRE</item>
+        <item>698140 - RANCHO ALEGRE</item>
+        <item>871160 - RANCHO ALEGRE DO OESTE</item>
+        <item>871280 - REALEZA</item>
+        <item>699810 - REALEZA</item>
+        <item>871400 - REBOUÇAS</item>
+        <item>698160 - REBOUÇAS</item>
+        <item>871640 - RENASCENÇA</item>
+        <item>699850 - RENASCENÇA</item>
+        <item>871880 - RESERVA</item>
+        <item>698180 - RESERVA</item>
+        <item>874540 - RESERVA DO IGUAÇU</item>
+        <item>698290 - RESERVA DO IGUAÇU</item>
+        <item>872120 - RIBEIRÃO DO PINHAL</item>
+        <item>698200 - RIBEIRÃO DO PINHAL</item>
+        <item>872240 - RIO AZUL</item>
+        <item>698210 - RIO AZUL</item>
+        <item>872360 - RIO BOM</item>
+        <item>698220 - RIO BOM</item>
+        <item>872480 - RIO BONITO DO IGUAÇU</item>
+        <item>698250 - RIO BONITO DO IGUAÇU</item>
+        <item>698225 - RIO BRANCO DO IVAÍ</item>
+        <item>872710 - RIO BRANCO DO IVAÍ</item>
+        <item>872720 - RIO BRANCO DO SUL</item>
+        <item>698230 - RIO BRANCO DO SUL</item>
+        <item>872960 - RIO CLARO DO SUL</item>
+        <item>698240 - RIO NEGRO</item>
+        <item>873440 - RIO NEGRO</item>
+        <item>874280 - ROLÂNDIA</item>
+        <item>699340 - ROLÂNDIA</item>
+        <item>874400 - RONCADOR</item>
+        <item>698260 - RONCADOR</item>
+        <item>874640 - RONDON</item>
+        <item>698270 - RONDON</item>
+        <item>698280 - ROSARIO DO IVAÍ</item>
+        <item>874700 - ROSARIO DO IVAÍ</item>
+        <item>874760 - SABÁUDIA</item>
+        <item>699560 - SABÁUDIA</item>
+        <item>875000 - SALGADO FILHO</item>
+        <item>699740 - SALGADO FILHO</item>
+        <item>698300 - SALTO DO ITARARÉ</item>
+        <item>875240 - SALTO DO ITARARÉ</item>
+        <item>875360 - SALTO DO LONTRA</item>
+        <item>698310 - SALTO DO LONTRA</item>
+        <item>875600 - SANTA AMÉLIA</item>
+        <item>698320 - SANTA AMÉLIA</item>
+        <item>876080 - SANTA CECÍLIA DO PAVÃO</item>
+        <item>698340 - SANTA CECÍLIA DO PAVÃO</item>
+        <item>876440 - SANTA CRUZ DE MONTE CASTELO</item>
+        <item>698350 - SANTA CRUZ DE MONTE CASTELO</item>
+        <item>876800 - SANTA FÉ</item>
+        <item>698360 - SANTA FÉ</item>
+        <item>876920 - SANTA HELENA</item>
+        <item>698370 - SANTA HELENA</item>
+        <item>877040 - SANTA INÊS</item>
+        <item>698380 - SANTA INÊS</item>
+        <item>877160 - SANTA ISABEL DO IVAÍ</item>
+        <item>698390 - SANTA ISABEL DO IVAÍ</item>
+        <item>877280 - SANTA IZABEL DO OESTE</item>
+        <item>699820 - SANTA IZABEL DO OESTE</item>
+        <item>698580 - SANTA LÚCIA</item>
+        <item>877400 - SANTA LÚCIA</item>
+        <item>877820 - SANTA MARIA DO OESTE</item>
+        <item>695370 - SANTA MARIA DO OESTE</item>
+        <item>878000 - SANTA MARIANA</item>
+        <item>698410 - SANTA MARIANA</item>
+        <item>695150 - SANTA MÔNICA</item>
+        <item>878120 - SANTA MÔNICA</item>
+        <item>878480 - SANTA TEREZA DO OESTE</item>
+        <item>698450 - SANTA TEREZA DO OESTE</item>
+        <item>878600 - SANTA TEREZINHA DE ITAIPU</item>
+        <item>698400 - SANTA TEREZINHA DE ITAIPU</item>
+        <item>875840 - SANTANA DO ITARARÉ</item>
+        <item>698330 - SANTANA DO ITARARÉ</item>
+        <item>698440 - SANTO ANTÔNIO DA PLATINA</item>
+        <item>879440 - SANTO ANTÔNIO DA PLATINA</item>
+        <item>698420 - SANTO ANTÔNIO DO CAIUÁ</item>
+        <item>878960 - SANTO ANTÔNIO DO CAIUÁ</item>
+        <item>698430 - SANTO ANTÔNIO DO PARAÍSO</item>
+        <item>879320 - SANTO ANTÔNIO DO PARAÍSO</item>
+        <item>699880 - SANTO ANTÔNIO DO SUDOESTE</item>
+        <item>879560 - SANTO ANTÔNIO DO SUDOESTE</item>
+        <item>879680 - SANTO INÁCIO</item>
+        <item>698460 - SANTO INÁCIO</item>
+        <item>880160 - SÃO CARLOS DO IVAÍ</item>
+        <item>881240 - SÃO JERÔNIMO DA SERRA</item>
+        <item>698480 - SÃO JERÔNIMO DA SERRA</item>
+        <item>698490 - SÃO JOÃO</item>
+        <item>881360 - SÃO JOÃO</item>
+        <item>698550 - SÃO JOÃO DA BOA VISTA</item>
+        <item>882800 - SÃO JOÃO DA BOA VISTA</item>
+        <item>698500 - SÃO JOÃO DO CAIUÁ</item>
+        <item>881600 - SÃO JOÃO DO CAIUÁ</item>
+        <item>698510 - SÃO JOÃO DO IVAÍ</item>
+        <item>881720 - SÃO JOÃO DO IVAÍ</item>
+        <item>881960 - SAO JOÃO DO TRIUNFO</item>
+        <item>698520 - SAO JOÃO DO TRIUNFO</item>
+        <item>699750 - SÃO JORGE DO IVAÍ</item>
+        <item>882320 - SÃO JORGE DO IVAÍ</item>
+        <item>882440 - SÃO JORGE DO OESTE</item>
+        <item>699950 - SÃO JORGE DO OESTE</item>
+        <item>698540 - SÃO JORGE DO PATROCÍNIO</item>
+        <item>882210 - SÃO JORGE DO PATROCÍNIO</item>
+        <item>882740 - SÃO JOSÉ DAS PALMEIRAS</item>
+        <item>698530 - SÃO JOSÉ DAS PALMEIRAS</item>
+        <item>883160 - SAO JOSÉ DOS PINHAIS</item>
+        <item>698560 - SÃO JOSÉ DOS PINHAIS</item>
+        <item>695160 - SÃO MANOEL</item>
+        <item>884120 - SÃO MANOEL</item>
+        <item>698570 - SÃO MATEUS DO SUL</item>
+        <item>884360 - SÃO MATEUS DO SUL</item>
+        <item>884720 - SÃO MIGUEL DO IGUAÇU</item>
+        <item>699450 - SÃO MIGUEL DO IGUAÇU</item>
+        <item>695340 - SÃO PEDRO DO IGUAÇU</item>
+        <item>884780 - SÃO PEDRO DO IGUAÇU</item>
+        <item>698590 - SÃO PEDRO DO IVAÍ</item>
+        <item>885080 - SÃO PEDRO DO IVAÍ</item>
+        <item>885200 - SÃO PEDRO DO PARANÁ</item>
+        <item>698600 - SÃO PEDRO DO PARANÁ</item>
+        <item>886040 - SÃO SEBASTIÃO DA AMOREIRA</item>
+        <item>698610 - SÃO SEBASTIÃO DA AMOREIRA</item>
+        <item>886520 - SÃO TOMÉ</item>
+        <item>887120 - SAPOPEMA</item>
+        <item>698630 - SAPOPEMA</item>
+        <item>887240 - SARANDI</item>
+        <item>887360 - SAUDADES DO IGUAÇU</item>
+        <item>695350 - SAUDADES DO IGUAÇU</item>
+        <item>887840 - SENGES</item>
+        <item>698640 - SENGES</item>
+        <item>888250 - SERRANÓPOLIS DO IGUAÇU</item>
+        <item>694990 - SERRANÓPOLIS DO IGUAÇU</item>
+        <item>888440 - SERTANEJA</item>
+        <item>698650 - SERTANEJA</item>
+        <item>888560 - SERTANÓPOLIS</item>
+        <item>698660 - SERTANÓPOLIS</item>
+        <item>889160 - SIQUEIRA CAMPOS</item>
+        <item>698670 - SIQUEIRA CAMPOS</item>
+        <item>696480 - SULINA</item>
+        <item>887600 - SULINA</item>
+        <item>889880 - TAMARANA</item>
+        <item>698750 - TAMARANA</item>
+        <item>698680 - TAMBOARA</item>
+        <item>890000 - TAMBOARA</item>
+        <item>890120 - TAPEJARA</item>
+        <item>699960 - TAPEJARA</item>
+        <item>890240 - TAPIRA</item>
+        <item>698700 - TAPIRA</item>
+        <item>890480 - TEIXEIRA SOARES</item>
+        <item>698710 - TEIXEIRA SOARES</item>
+        <item>890600 - TELÊMACO BORBA</item>
+        <item>698720 - TELÊMACO BORBA</item>
+        <item>890960 - TERRA BOA</item>
+        <item>698730 - TERRA BOA</item>
+        <item>891200 - TERRA RICA</item>
+        <item>698740 - TERRA RICA</item>
+        <item>891320 - TERRA ROXA DO OESTE</item>
+        <item>699400 - TERRA ROXA DO OESTE</item>
+        <item>891440 - TIBAGI</item>
+        <item>698760 - TIBAGI</item>
+        <item>891560 - TIJUCAS DO SUL</item>
+        <item>698770 - TIJUCAS DO SUL</item>
+        <item>891800 - TOLEDO</item>
+        <item>699390 - TOLEDO</item>
+        <item>891920 - TOMAZINA</item>
+        <item>698790 - TOMAZINA</item>
+        <item>892040 - TRÊS BARRAS DO PARANÁ</item>
+        <item>698810 - TRÊS BARRAS DO PARANÁ</item>
+        <item>892880 - TUNAS DO PARANÁ</item>
+        <item>695020 - TUNAS DO PARANÁ</item>
+        <item>893000 - TUNEIRAS DO OESTE</item>
+        <item>699980 - TUNEIRAS DO OESTE</item>
+        <item>893120 - TUPASSI</item>
+        <item>698800 - TUPASSI</item>
+        <item>893360 - TURVO</item>
+        <item>698820 - TURVO</item>
+        <item>893840 - UBIRATÃ</item>
+        <item>699300 - UBIRATÃ</item>
+        <item>894080 - UMUARAMA</item>
+        <item>699220 - UMUARAMA</item>
+        <item>894320 - UNIÃO DA VITÓRIA</item>
+        <item>698830 - UNIÃO DA VITÓRIA</item>
+        <item>894440 - UNIFLOR</item>
+        <item>699920 - UNIFLOR</item>
+        <item>894560 - URAÍ</item>
+        <item>698850 - URAÍ</item>
+        <item>895400 - VENTANIA</item>
+        <item>695380 - VENTANIA</item>
+        <item>895640 - VERA CRUZ DO OESTE</item>
+        <item>698860 - VERA CRUZ DO OESTE</item>
+        <item>895880 - VERÊ</item>
+        <item>699800 - VERÊ</item>
+        <item>698780 - VIRMOND</item>
+        <item>899420 - VIRMOND</item>
+        <item>698880 - VITORINO</item>
+        <item>899780 - VITORINO</item>
+        <item>895280 - WENCESLAU BRAZ</item>
+        <item>698870 - WENCESLAU BRAZ</item>
+        <item>698890 - XAMBRÊ</item>
+        <item>899860 - XAMBRÊ</item>
+
+    </string-array>
+
+
+    <!--<string-array name="Cidades">
+        <item>80024 - ABATIA</item>
+        <item>80060 - ADRIANOPOLIS</item>
+        <item>80132 - AGUDOS DO SUL</item>
+        <item>80168 - ALMIRANTE TAMANDARE</item>
+        <item>80180 - ALTAMIRA DO PARANA</item>
+        <item>89612 - ALTO PARAISO</item>
+        <item>80264 - ALTO PARANA</item>
+        <item>80276 - ALTO PIQUIRI</item>
+        <item>80240 - ALTONIA</item>
+        <item>80324 - ALVORADA DO SUL</item>
+        <item>80336 - AMAPORA</item>
+        <item>80372 - AMPERE</item>
+        <item>80378 - ANAHY</item>
+        <item>80384 - ANDIRA</item>
+        <item>80408 - ANGULO</item>
+        <item>80432 - ANTONINA</item>
+        <item>80444 - ANTONIO OLINTO</item>
+        <item>80492 - APUCARANA</item>
+        <item>80516 - ARAPONGAS</item>
+        <item>80528 - ARAPOTI</item>
+        <item>80540 - ARAPUA</item>
+        <item>80576 - ARARUNA</item>
+        <item>80588 - ARAUCARIA</item>
+        <item>80612 - ARIRANHA DO IVAI</item>
+        <item>80624 - ASSAI</item>
+        <item>80636 - ASSIS CHATEAUBRIAND</item>
+        <item>80648 - ASTORGA</item>
+        <item>80660 - ATALAIA</item>
+        <item>80744 - BALSA NOVA</item>
+        <item>80756 - BANDEIRANTES</item>
+        <item>80780 - BARBOSA FERRAZ</item>
+        <item>80804 - BARRACAO</item>
+        <item>80924 - BELA VISTA DA CAROBA</item>
+        <item>80960 - BELA VISTA DO PARAISO</item>
+        <item>81020 - BITURUNA</item>
+        <item>81032 - BOA ESPERANCA</item>
+        <item>81056 - BOA ESPERANCA DO IGUACU</item>
+        <item>81068 - BOA VENTURA DE SAO ROQUE</item>
+        <item>81104 - BOA VISTA DA APARECIDA</item>
+        <item>81116 - BOCAIUVA DO SUL</item>
+        <item>81140 - BOM JESUS DO SUL</item>
+        <item>81176 - BOM SUCESSO</item>
+        <item>81188 - BOM SUCESSO DO SUL</item>
+        <item>81236 - BORRAZOPOLIS</item>
+        <item>81245 - BRAGANEY</item>
+        <item>81260 - BRASILANDIA DO SUL</item>
+        <item>81308 - CAFEARA</item>
+        <item>81332 - CAFELANDIA</item>
+        <item>81344 - CAFEZAL DO SUL</item>
+        <item>81380 - CALIFORNIA</item>
+        <item>81404 - CAMBARA</item>
+        <item>81416 - CAMBE</item>
+        <item>81428 - CAMBIRA</item>
+        <item>81464 - CAMPINA DA LAGOA</item>
+        <item>81488 - CAMPINA DO SIMAO</item>
+        <item>81476 - CAMPINA GRANDE DO SUL</item>
+        <item>81500 - CAMPO BONITO</item>
+        <item>81536 - CAMPO DO TENENTE</item>
+        <item>81548 - CAMPO LARGO</item>
+        <item>81572 - CAMPO MAGRO</item>
+        <item>81584 - CAMPO MOURAO</item>
+        <item>81608 - CANDIDO DE ABREU</item>
+        <item>82226 - CANDOI</item>
+        <item>81656 - CANTAGALO</item>
+        <item>81680 - CAPANEMA</item>
+        <item>81692 - CAPITAO LEONIDAS MARQUES</item>
+        <item>81704 - CARAMBEI</item>
+        <item>81740 - CARLOPOLIS</item>
+        <item>81776 - CASCAVEL</item>
+        <item>81800 - CASTRO</item>
+        <item>81812 - CATANDUVAS</item>
+        <item>81872 - CENTENARIO DO SUL</item>
+        <item>81896 - CERRO AZUL</item>
+        <item>81908 - CEU AZUL</item>
+        <item>81920 - CHOPINZINHO</item>
+        <item>81932 - CIANORTE</item>
+        <item>81944 - CIDADE GAUCHA</item>
+        <item>81968 - CLEVELANDIA</item>
+        <item>81980 - COLOMBO</item>
+        <item>82040 - COLORADO</item>
+        <item>82088 - CONGONHINHAS</item>
+        <item>82100 - CONSELHEIRO MAIRINCK</item>
+        <item>82124 - CONTENDA</item>
+        <item>82148 - CORBELIA</item>
+        <item>82160 - CORNELIO PROCOPIO</item>
+        <item>82172 - CORONEL DOMINGOS SOARES</item>
+        <item>82196 - CORONEL VIVIDA</item>
+        <item>82220 - CORUMBATAI DO SUL</item>
+        <item>82328 - CRUZ MACHADO</item>
+        <item>82280 - CRUZEIRO DO IGUACU</item>
+        <item>82292 - CRUZEIRO DO OESTE</item>
+        <item>82316 - CRUZEIRO DO SUL</item>
+        <item>82340 - CRUZMALTINA</item>
+        <item>82580 - CURIUVA</item>
+        <item>82628 - DIAMANTE DO NORTE</item>
+        <item>82616 - DIAMANTE DO SUL</item>
+        <item>82664 - DOIS VIZINHOS</item>
+        <item>82688 - DOURADINA</item>
+        <item>82712 - DOUTOR CAMARGO</item>
+        <item>89504 - DOUTOR ULYSSES</item>
+        <item>82796 - ENEAS MARQUES</item>
+        <item>82820 - ENGENHEIRO BELTRAO</item>
+        <item>82826 - ENTRE RIOS DO OESTE</item>
+        <item>81044 - ESPERANCA NOVA</item>
+        <item>82892 - ESPIGAO ALTO DO IGUACU</item>
+        <item>82952 - FAROL</item>
+        <item>82964 - FAXINAL</item>
+        <item>83006 - FAZENDA RIO GRANDE</item>
+        <item>83012 - FENIX</item>
+        <item>83024 - FERNANDES PINHEIRO</item>
+        <item>83060 - FIGUEIRA</item>
+        <item>83096 - FLOR DA SERRA DO SUL</item>
+        <item>83108 - FLORAI</item>
+        <item>83120 - FLORESTA</item>
+        <item>83132 - FLORESTOPOLIS</item>
+        <item>83156 - FLORIDA</item>
+        <item>83204 - FORMOSA DO OESTE</item>
+        <item>83216 - FOZ DO IGUACU</item>
+        <item>88775 - FOZ DO JORDAO</item>
+        <item>83228 - FRANCISCO ALVES</item>
+        <item>83240 - FRANCISCO BELTRAO</item>
+        <item>83312 - GENERAL CARNEIRO</item>
+        <item>83330 - GODOY MOREIRA</item>
+        <item>83336 - GOIOERE</item>
+        <item>83348 - GOIOXIM</item>
+        <item>83384 - GRANDES RIOS</item>
+        <item>83408 - GUAIRA</item>
+        <item>83432 - GUAIRACA</item>
+        <item>83456 - GUAMIRANGA</item>
+        <item>83480 - GUAPIRAMA</item>
+        <item>83504 - GUAPOREMA</item>
+        <item>83528 - GUARACI</item>
+        <item>83564 - GUARANIACU</item>
+        <item>83576 - GUARAPUAVA</item>
+        <item>83588 - GUARAQUECABA</item>
+        <item>83600 - GUARATUBA</item>
+        <item>83672 - HONORIO SERPA</item>
+        <item>83696 - IBAITI</item>
+        <item>83708 - IBEMA</item>
+        <item>83732 - IBIPORA</item>
+        <item>83756 - ICARAIMA</item>
+        <item>83780 - IGUARACU</item>
+        <item>83798 - IGUATU</item>
+        <item>83816 - IMBAU</item>
+        <item>83840 - IMBITUVA</item>
+        <item>83852 - INACIO MARTINS</item>
+        <item>83864 - INAJA</item>
+        <item>83876 - INDIANOPOLIS</item>
+        <item>83924 - IPIRANGA</item>
+        <item>83936 - IPORA</item>
+        <item>83948 - IRACEMA DO OESTE</item>
+        <item>83972 - IRATI</item>
+        <item>83996 - IRETAMA</item>
+        <item>84032 - ITAGUAJE</item>
+        <item>80476 - ITAIPULANDIA</item>
+        <item>84056 - ITAMBARACA</item>
+        <item>84068 - ITAMBE</item>
+        <item>84098 - ITAPERUCU</item>
+        <item>84116 - ITAUNA DO SUL</item>
+        <item>84128 - IVAI</item>
+        <item>84164 - IVAIPORA</item>
+        <item>84188 - IVATE</item>
+        <item>84200 - IVATUBA</item>
+        <item>84224 - JABOTI</item>
+        <item>84296 - JAGUAPITA</item>
+        <item>84308 - JAGUARIAIVA</item>
+        <item>84332 - JANDAIA DO SUL</item>
+        <item>84380 - JANIOPOLIS</item>
+        <item>84392 - JAPIRA</item>
+        <item>84404 - JAPURA</item>
+        <item>84428 - JARDIM ALEGRE</item>
+        <item>84440 - JARDIM OLINDA</item>
+        <item>84464 - JATAIZINHO</item>
+        <item>84476 - JESUITAS</item>
+        <item>84500 - JOAQUIM TAVORA</item>
+        <item>84548 - JUNDIAI DO SUL</item>
+        <item>84560 - JURANDA</item>
+        <item>84572 - JUSSARA</item>
+        <item>84596 - KALORE</item>
+        <item>84644 - LAPA</item>
+        <item>84656 - LARANJAL</item>
+        <item>84668 - LARANJEIRAS DO SUL</item>
+        <item>84704 - LEOPOLIS</item>
+        <item>84728 - LIDIANOPOLIS</item>
+        <item>84732 - LINDOESTE</item>
+        <item>84764 - LOANDA</item>
+        <item>84776 - LOBATO</item>
+        <item>84824 - LUIZIANA</item>
+        <item>84836 - LUNARDELLI</item>
+        <item>84848 - LUPIONOPOLIS</item>
+        <item>84884 - MALLET</item>
+        <item>84908 - MAMBORE</item>
+        <item>84920 - MANDAGUACU</item>
+        <item>84932 - MANDAGUARI</item>
+        <item>84956 - MANDIRITUBA</item>
+        <item>82776 - MANFRINOPOLIS</item>
+        <item>84968 - MANGUEIRINHA</item>
+        <item>84980 - MANOEL RIBAS</item>
+        <item>85028 - MARECHAL CANDIDO RONDON</item>
+        <item>85052 - MARIA HELENA</item>
+        <item>85064 - MARIALVA</item>
+        <item>85088 - MARILANDIA DO SUL</item>
+        <item>85100 - MARILENA</item>
+        <item>85124 - MARILUZ</item>
+        <item>85160 - MARIOPOLIS</item>
+        <item>89768 - MARIPA</item>
+        <item>85196 - MARMELEIRO</item>
+        <item>85220 - MARQUINHO</item>
+        <item>85232 - MARUMBI</item>
+        <item>85244 - MATELANDIA</item>
+        <item>85256 - MATINHOS</item>
+        <item>85265 - MATO RICO</item>
+        <item>85268 - MAUA DA SERRA</item>
+        <item>85280 - MEDIANEIRA</item>
+        <item>85294 - MERCEDES</item>
+        <item>85304 - MIRADOR</item>
+        <item>85328 - MIRASELVA</item>
+        <item>85352 - MISSAL</item>
+        <item>85388 - MOREIRA SALES</item>
+        <item>85400 - MORRETES</item>
+        <item>85424 - MUNHOZ DE MELLO</item>
+        <item>85532 - NOSSA SENHORA DAS GRACAS</item>
+        <item>85544 - NOVA ALIANCA DO IVAI</item>
+        <item>85556 - NOVA AMERICA DA COLINA</item>
+        <item>85580 - NOVA AURORA</item>
+        <item>85652 - NOVA CANTU</item>
+        <item>85676 - NOVA ESPERANCA</item>
+        <item>85664 - NOVA ESPERANCA DO SUDOESTE</item>
+        <item>85700 - NOVA FATIMA</item>
+        <item>89828 - NOVA LARANJEIRAS</item>
+        <item>85736 - NOVA LONDRINA</item>
+        <item>85772 - NOVA OLIMPIA</item>
+        <item>85784 - NOVA PRATA DO IGUACU</item>
+        <item>87596 - NOVA SANTA BARBARA</item>
+        <item>85820 - NOVA SANTA ROSA</item>
+        <item>85826 - NOVA TEBAS</item>
+        <item>84008 - NOVO ITACOLOMI</item>
+        <item>85928 - ORTIGUEIRA</item>
+        <item>85952 - OURIZONA</item>
+        <item>85964 - OURO VERDE DO OESTE</item>
+        <item>86012 - PAICANDU</item>
+        <item>86024 - PALMAS</item>
+        <item>86036 - PALMEIRA</item>
+        <item>86072 - PALMITAL</item>
+        <item>86108 - PALOTINA</item>
+        <item>86156 - PARAISO DO NORTE</item>
+        <item>86168 - PARANACITY</item>
+        <item>86204 - PARANAGUA</item>
+        <item>86228 - PARANAPOEMA</item>
+        <item>86240 - PARANAVAI</item>
+        <item>86276 - PATO BRAGADO</item>
+        <item>86288 - PATO BRANCO</item>
+        <item>86336 - PAULA FREITAS</item>
+        <item>86360 - PAULO FRONTIN</item>
+        <item>86384 - PEABIRU</item>
+        <item>86420 - PEROBAL</item>
+        <item>86432 - PEROLA</item>
+        <item>86468 - PIEN</item>
+        <item>86492 - PINHAIS</item>
+        <item>86516 - PINHAL DE SAO BENTO</item>
+        <item>86504 - PINHALAO</item>
+        <item>86552 - PINHAO</item>
+        <item>86588 - PIRAI DO SUL</item>
+        <item>86612 - PIRAQUARA</item>
+        <item>86636 - PITANGA</item>
+        <item>86648 - PITANGUEIRAS</item>
+        <item>86660 - PLANALTINA DO PARANA</item>
+        <item>86673 - PLANALTO</item>
+        <item>86696 - PONTA GROSSA</item>
+        <item>86888 - PONTAL DO PARANA</item>
+        <item>86720 - PORECATU</item>
+        <item>86744 - PORTO AMAZONAS</item>
+        <item>86827 - PORTO BARREIRO</item>
+        <item>86816 - PORTO RICO</item>
+        <item>86868 - PORTO UNIAO</item>
+        <item>86864 - PORTO VITORIA</item>
+        <item>89872 - PRADO FERREIRA</item>
+        <item>86900 - PRANCHITA</item>
+        <item>86924 - PRESIDENTE CASTELO BRANCO</item>
+        <item>86948 - PRIMEIRO DE MAIO</item>
+        <item>86972 - PRUDENTOPOLIS</item>
+        <item>87008 - QUARTO CENTENARIO</item>
+        <item>86996 - QUATIGUA</item>
+        <item>87020 - QUATRO BARRAS</item>
+        <item>87044 - QUATRO PONTES</item>
+        <item>87056 - QUEDAS DO IGUACU</item>
+        <item>87068 - QUERENCIA DO NORTE</item>
+        <item>87080 - QUINTA DO SOL</item>
+        <item>87092 - QUITANDINHA</item>
+        <item>87104 - RAMILANDIA</item>
+        <item>87112 - RANCHO ALEGRE</item>
+        <item>87116 - RANCHO ALEGRE DO OESTE</item>
+        <item>87128 - REALEZA</item>
+        <item>87140 - REBOUCAS</item>
+        <item>87164 - RENASCENCA</item>
+        <item>87188 - RESERVA</item>
+        <item>87454 - RESERVA DO IGUACU</item>
+        <item>87212 - RIBEIRAO DO PINHAL</item>
+        <item>87224 - RIO AZUL</item>
+        <item>87236 - RIO BOM</item>
+        <item>87248 - RIO BONITO DO IGUACU</item>
+        <item>87271 - RIO BRANCO DO IVAI</item>
+        <item>87272 - RIO BRANCO DO SUL</item>
+        <item>87344 - RIO NEGRO</item>
+        <item>87428 - ROLANDIA</item>
+        <item>87440 - RONCADOR</item>
+        <item>87464 - RONDON</item>
+        <item>87470 - ROSARIO DO IVAI</item>
+        <item>87476 - SABAUDIA</item>
+        <item>87500 - SALGADO FILHO</item>
+        <item>87524 - SALTO DO ITARARE</item>
+        <item>87536 - SALTO DO LONTRA</item>
+        <item>87560 - SANTA AMELIA</item>
+        <item>87608 - SANTA CECILIA DO PAVAO</item>
+        <item>87644 - SANTA CRUZ DE MONTE CASTELO</item>
+        <item>87680 - SANTA FE</item>
+        <item>87692 - SANTA HELENA</item>
+        <item>87704 - SANTA INES</item>
+        <item>87716 - SANTA ISABEL DO IVAI</item>
+        <item>87728 - SANTA IZABEL DO OESTE</item>
+        <item>87740 - SANTA LUCIA</item>
+        <item>87782 - SANTA MARIA DO OESTE</item>
+        <item>87800 - SANTA MARIANA</item>
+        <item>87812 - SANTA MONICA</item>
+        <item>87848 - SANTA TEREZA DO OESTE</item>
+        <item>87860 - SANTA TEREZINHA DE ITAIPU</item>
+        <item>87584 - SANTANA DO ITARARE</item>
+        <item>87944 - SANTO ANTONIO DA PLATINA</item>
+        <item>87896 - SANTO ANTONIO DO CAIUA</item>
+        <item>87932 - SANTO ANTONIO DO PARAISO</item>
+        <item>87956 - SANTO ANTONIO DO SUDOESTE</item>
+        <item>87968 - SANTO INACIO</item>
+        <item>88016 - SAO CARLOS DO IVAI</item>
+        <item>88124 - SAO JERONIMO DA SERRA</item>
+        <item>88136 - SAO JOAO</item>
+        <item>88160 - SAO JOAO DO CAIUA</item>
+        <item>88172 - SAO JOAO DO IVAI</item>
+        <item>88196 - SAO JOAO DO TRIUNFO</item>
+        <item>88232 - SAO JORGE DO IVAI</item>
+        <item>88221 - SAO JORGE DO PATROCINIO</item>
+        <item>88280 - SAO JOSE DA BOA VISTA</item>
+        <item>88274 - SAO JOSE DAS PALMEIRAS</item>
+        <item>88316 - SAO JOSE DOS PINHAIS</item>
+        <item>88412 - SAO MANOEL DO PARANA</item>
+        <item>88436 - SAO MATEUS DO SUL</item>
+        <item>88472 - SAO MIGUEL DO IGUACU</item>
+        <item>88478 - SAO PEDRO DO IGUACU</item>
+        <item>88508 - SAO PEDRO DO IVAI</item>
+        <item>88520 - SAO PEDRO DO PARANA</item>
+        <item>88604 - SAO SEBASTIAO DA AMOREIRA</item>
+        <item>88652 - SAO TOME</item>
+        <item>88712 - SAPOPEMA</item>
+        <item>88724 - SARANDI</item>
+        <item>88736 - SAUDADE DO IGUACU</item>
+        <item>88784 - SENGES</item>
+        <item>88825 - SERRANOPOLIS DO IGUACU</item>
+        <item>88844 - SERTANEJA</item>
+        <item>88856 - SERTANOPOLIS</item>
+        <item>88916 - SIQUEIRA CAMPOS</item>
+        <item>88760 - SULINA</item>
+        <item>88988 - TAMARANA</item>
+        <item>89000 - TAMBOARA</item>
+        <item>89012 - TAPEJARA</item>
+        <item>89024 - TAPIRA</item>
+        <item>89048 - TEIXEIRA SOARES</item>
+        <item>89060 - TELEMACO BORBA</item>
+        <item>89096 - TERRA BOA</item>
+        <item>89120 - TERRA RICA</item>
+        <item>89132 - TERRA ROXA</item>
+        <item>89144 - TIBAGI</item>
+        <item>89156 - TIJUCAS DO SUL</item>
+        <item>89180 - TOLEDO</item>
+        <item>89192 - TOMAZINA</item>
+        <item>89204 - TRES BARRAS DO PARANA</item>
+        <item>89288 - TUNAS DO PARANA</item>
+        <item>89300 - TUNEIRAS DO OESTE</item>
+        <item>89312 - TUPASSI</item>
+        <item>89336 - TURVO</item>
+        <item>89384 - UBIRATA</item>
+        <item>89408 - UMUARAMA</item>
+        <item>89432 - UNIAO DA VITORIA</item>
+        <item>89444 - UNIFLOR</item>
+        <item>89456 - URAI</item>
+        <item>89540 - VENTANIA</item>
+        <item>89564 - VERA CRUZ DO OESTE</item>
+        <item>89588 - VERE</item>
+        <item>89942 - VIRMOND</item>
+        <item>89978 - VITORINO</item>
+        <item>89528 - WENCESLAU BRAZ</item>
+        <item>89986 - XAMBRE</item>
+
+
+    </string-array>-->
+
+
+
+</resources>

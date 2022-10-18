@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.copel.mhmat.pranchetaVirtualSmrNrt.FormularioActivity">
+
+    <item android:title="Relatorio"
+
+        app:showAsAction="always"
+        app:actionLayout="@layout/menu_item_relatorio"
+        android:id="@+id/menu_formulario_report"/>
+
+<!--    <item android:title="Os"-->
+<!--        android:icon="@drawable/ic_os"-->
+<!--        app:showAsAction="always"-->
+<!--        android:id="@+id/menu_formulario_os"/>-->
+
+    <item android:title="Compartilhar"
+        app:showAsAction="always"
+        app:actionLayout="@layout/menu_item_compartilhar"
+        android:id="@+id/menu_formulario_share"/>
+
+
+    <item android:title="Ok"
+        app:showAsAction="always"
+        app:actionLayout="@layout/menu_item_ok"
+        android:id="@+id/menu_formulario_ok"/>
+
+
+
+</menu>

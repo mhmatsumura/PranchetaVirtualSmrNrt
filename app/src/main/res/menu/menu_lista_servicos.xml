@@ -1,0 +1,32 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".ListaServicosActivity"
+>
+
+    <item android:title="Encerrado"
+        app:showAsAction="always"
+        app:actionLayout="@layout/menu_item_encerrado"
+        android:id="@+id/menu_lista_servico_encerrado"/>
+
+    <item android:title="Compartilhar"
+        app:showAsAction="always"
+        app:actionLayout="@layout/menu_item_compartilhar"
+        android:id="@+id/menu_lista_servico_share_aberto"/>
+
+
+
+    <item android:title="Cadastrar Colaborador"
+        app:showAsAction="never"
+        android:id="@+id/menu_lista_servico_cadastrar_colaborador"/>
+    <item android:title="Criar &amp; Enviar Backup"
+        app:showAsAction="never"
+        android:id="@+id/menu_lista_servico_enviar_backup"/>
+    <item android:title="Carregar Backup"
+        app:showAsAction="never"
+        android:id="@+id/menu_lista_servico_carregar_backup"/>
+    <item android:title="Sobre"
+        app:showAsAction="never"
+        android:id="@+id/menu_lista_servico_sobre"/>
+
+</menu>

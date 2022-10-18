@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/text2"
+    android:singleLine="true"
+    android:layout_margin="@dimen/margin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:ellipsize="marquee"
+    android:textSize="@dimen/text_size_edittext"
+    android:textColor="#0d0d0d"
+    android:gravity="center"
+    android:padding="@dimen/padding"
+    android:background="@drawable/edit_text_basico"
+
+
+
+  />
+
+
+

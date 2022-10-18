@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="text_size_label">15sp</dimen>
+    <dimen name="text_size_edittext">17sp</dimen>
+    <dimen name="text_size_medio">17sp</dimen>
+    <dimen name="title">25sp</dimen>
+
+    <dimen name="margin">5dp</dimen>
+    <dimen name="margin_label">10dp</dimen>
+    <dimen name="padding">5dp</dimen>
+    <dimen name="edittext_height">45dp</dimen>
+    <dimen name="edittext_height_menor">35dp</dimen>
+    <dimen name="foto_height">55dp</dimen>
+
+
+</resources>
