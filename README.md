@@ -34,7 +34,7 @@
 ##### Função "Pesquisar IP":
 
 <div>
-   <img src="https://github.com/mhmatsumura/imagens/blob/9713c990906c15e5a6a551aefe9ee67c547b26b2/pranchetaVirtual.jpeg" title="Git" **alt="Git" width="360" height="650" />
+   <img src="https://github.com/mhmatsumura/imagens/blob/f10b09e9bc2558cc3cd416b379730a2d9d6d0b85/print_prancheta/pranchetaVirtual.jpeg" title="Git" **alt="Git" width="360" height="650" />
 </div>
 <br/><br/>
 
