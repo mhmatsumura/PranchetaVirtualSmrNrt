@@ -2,6 +2,11 @@
 ###### Aplicativo desenvolvido para auxiliar no gerenciamento de serviços executados pelos eletricista em campo.
 
 ## Tecnologias utilizadas:
+- ANDROID STUDIO
+- SQLiteDatabase
+- SQLiteOpenHelper
+- Serializable
+- BroadcastReceiver
 - BaseAdapter
 - ImageView
 - TextView 
@@ -10,10 +15,7 @@
 - SimpleDateFormat
 - ArrayList
 - List
-- SQLiteDatabase
-- SQLiteOpenHelper
-- Serializable
-- BroadcastReceiver 
+ 
 
 <br/><br/>
 
